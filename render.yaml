@@ -4,6 +4,5 @@ services:
     name: strategy-backtesting
     runtime: python
     pythonVersion: 3.11
-    buildCommand: "pip install -r backend/requirements.txt"
-    startCommand: "python3 backend/app.py"
-    root: backend
+    buildCommand: "pip install -r requirements-server.txt"
+    startCommand: "python3 app.py"
