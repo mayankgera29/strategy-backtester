@@ -1,8 +1,12 @@
+# render.yaml (repo root)
 # yaml-language-server: $schema=https://render.com/schema/v1/render.yaml
 services:
   - type: web
     name: strategy-backtesting
     runtime: python
     pythonVersion: 3.11
-    buildCommand: "pip install -r requirements-server.txt"
+    # upgrade pip/setuptools/packaging first, then install server requirements
+    buildCommand: >
+      python -m pip install --upgrade pip setuptools wheel packaging &&
+      pip install -r requirements-server.txt
     startCommand: "python3 app.py"
