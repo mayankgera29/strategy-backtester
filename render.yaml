@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=https://render.com/schema/v1/render.yaml
+services:
+  - type: web
+    name: strategy-backtesting
+    runtime: python
+    pythonVersion: 3.11
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python3 app.py"
+
