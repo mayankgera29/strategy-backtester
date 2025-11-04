@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+env/
+.venv/
+venv/
+*.egg-info/
+pip-wheel-metadata/
+dist/
+build/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+frontend/dist/
+npm-debug.log*
+yarn-error.log*
+pnpm-lock.yaml
+package-lock.json
+
+# env files
+.env
+*.env
+
+# logs
+*.log
+
+# pyenv
+.python-version
+
+# database files
+*.db
